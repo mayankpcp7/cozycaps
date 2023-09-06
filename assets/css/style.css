@@ -9,6 +9,9 @@
   box-sizing: border-box;
 }
 
+.sm_nav {
+  min-height: 100vh;
+}
 nav ul li {
   padding-right: 17px;
   padding-left: 17px;
@@ -17,22 +20,41 @@ nav ul li a {
   color: rgba(255, 255, 255, 1);
   font-family: "Balsamiq Sans";
   font-weight: 700;
- 
 }
- .headerstone{
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-  }
+.word_spacing {
+  word-spacing: -35px !important;
+}
+.hero_grass {
+  position: absolute;
+  bottom: -40%;
+}
+
+.hero_rainbow {
+  position: absolute;
+  top: 30%;
+  left: 5%;
+}
 .headerlefttree {
   position: absolute;
   left: -10%;
-  bottom: 10%;
+  bottom: -4%;
+  z-index: 5;
 }
-.headerrighttree{
+.headerrighttree {
   position: absolute;
   right: 0%;
-  bottom: 20%;
+  bottom: -3%;
+  z-index: 5;
+}
+.header_cloud {
+  position: absolute;
+  top: 10%;
+  right: 20%;
+}
+.header_smallcloud {
+  position: absolute;
+  top: 50%;
+  left: 30%;
 }
 .ff_chary {
   font-family: "Cherry Bomb One", cursive !important;
@@ -46,9 +68,7 @@ nav ul li a {
 .ff_balsmiq {
   font-family: "Balsamiq Sans", cursive;
 }
-.mb_n20 {
-  margin-bottom: -5%;
-}
+
 .bg_header {
   background: url(../images/webp/bg_sky.png);
   background-size: cover;
@@ -63,7 +83,9 @@ nav ul li a {
 .curser_pointer {
   cursor: pointer;
 }
-
+.trtl_y10 {
+  transform: translateY(8%);
+}
 .bar1,
 .bar2,
 .bar3 {
@@ -71,6 +93,12 @@ nav ul li a {
   min-height: 5px;
   margin-bottom: 5px;
   background-color: white;
+}
+.z_4 {
+  z-index: 4;
+}
+.trtl_xn10 {
+  transform: translateX(-2%) translateY(-6%);
 }
 .mw_758px {
   max-width: 758px;
@@ -84,10 +112,7 @@ nav ul li a {
 .textshadow_black {
   text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
 }
-.textshadow_orange {
-  text-shadow: 1px 1px rgba(255, 212, 154, 1) !important;
-}
-.textshadow_green {
+extshadow_green {
   text-shadow: 1px 1px rgba(207, 254, 127, 1);
 }
 .header_button {
@@ -282,6 +307,25 @@ nav ul li a {
 .textshadow_green2 {
   text-shadow: 1px 4px rgba(91, 167, 43, 1);
 }
+.navdown_cloud {
+  position: absolute;
+  top: 3%;
+  right: 0%;
+}
+.roadmap_layer {
+  position: absolute;
+  top: -70%;
+}
+/* ------------------------------------------------FAQS-------------------------------------------------- */
+.bg_cream {
+  background-color: #fcbe69;
+}
+.textshadow_orange{
+  text-shadow: 4px 4px rgb(255, 145, 0) !important;
+}
+  
+
+
 @media (max-width: 1200px) {
   .about_hippo {
     position: absolute;
@@ -299,6 +343,11 @@ nav ul li a {
     bottom: -29%;
     left: -30%;
   }
+  .hero_rainbow {
+    position: absolute;
+    top: 30%;
+    left: -10%;
+  }
 }
 @media (max-width: 992px) {
   ul {
@@ -313,6 +362,39 @@ nav ul li a {
   .hw_lg {
     height: 450px;
     width: 200px;
+  }
+  .header_smallcloud {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+  }
+  .navbar {
+    position: fixed;
+    left: -100%;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    background: #000000;
+    height: 100vh;
+    width: 100%;
+    transition: all 300ms linear;
+    z-index: 50;
+  }
+
+  .shownav {
+    left: 0;
+  }
+
+  .mobile-navbar-btn span {
+    position: relative;
+    z-index: 999;
+    border: 3px solid #0077ff;
+    background-color: #ffffff;
+    height: 15px;
+    width: 45px;
   }
 }
 @media (min-width: 1440px) {
@@ -340,13 +422,23 @@ nav ul li a {
     right: -24%;
     z-index: 0;
   }
+
+  .headerlefttree {
+    position: absolute;
+    left: -15%;
+    bottom: -4%;
+  }
 }
+
 @media (max-width: 767px) {
   .bigcard {
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 25px;
     padding-right: 25px;
+  }
+  .word_spacing {
+    word-spacing: -20px !important;
   }
 }
 @media (max-width: 576px) {
