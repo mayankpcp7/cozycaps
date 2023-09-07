@@ -12,67 +12,56 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
-  <body class="bg_sky">
+  <body class="bg_sky ">
+    <section
+      id="preloader"
+      class="min-vh-100 bg_sky d-flex justify-content-center align-items-center position-fixed top-0 w-100 z_998 pointer-event"
+    >
+      <div class="d-flex justify-content-center align-items-center">
+       <div>  <img  src="./assets/images/webp/navlogo.png" alt="" class="w-100" />  </div>
+           <P class="text-center ff_chary fs_xl color_orange textshadow_black word_spacing">
+            Cozy <span class="ff_soda color_green"> Capys </span> <span class="color_white">NFT </span>
+          </P>
+       </div>
+    </section>
     <header
       class="bg_header min_vh_100 d-flex flex-column align-items-center position-relative justify-content-between mb-5 "
     >
     <div class="header_smallcloud"><img src="./assets/images/webp/header_cloud.png" alt=""></div>
     <div class="header_cloud"><img src="./assets/images/webp/header_cloud.png" alt="cloud"></div>
     <div class="navdown_cloud"><img src="./assets/images/webp/navdown_cloud.png" alt="navdown_cloud"></div>
-    <div class="headerlefttree d-none d-xl-block"><img src="./assets/images/webp/header_lefttree.png" alt="header_lefttree"></div>
-    <div class="headerrighttree d-none d-xl-block"><img src="./assets/images/webp/headerright_tree.png" alt="header_righttree"></div>
+    <div class="headerlefttree d-none d-xl-block overflow-hidden" data-aos="fade-right" data-aos-duration="3000"><img src="./assets/images/webp/header_lefttree.png" alt="header_lefttree"></div>
+    <div class="headerrighttree d-none d-xl-block overflow-hidden"data-aos="fade-left" data-aos-duration="3000"><img src="./assets/images/webp/headerright_tree.png" alt="header_righttree"></div>
     <div class="hero_rainbow d-lg-block d-none"><img src="./assets/images/webp/her_rainbow.webp" alt="herorainbow"></div>
       <div class="container">
-        <nav class="d-flex justify-content-between align-items-center">
-          <div class="d-flex align-items-center curser_pointer">
-            <img src="./assets/images/webp/navlogo.png" alt="navlogo" />
-            <h3 class="mb-0 ff_chary fs_lg color_orange textshadow_orange">
-              Cozy <span class="color_green textshadow_green">Capys </span>
-            </h3>
-          </div>
-          <div class="d-lg-flex d-none aligm-items-center">
-            <ul class="d-flex align-items-center mb-0 ps-0">
-              <li><a href="#home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#impact">Impact</a></li>
-              <li><a href="#roadmap">Roadmap</a></li>
-              <li><a href="#faq">FAQ</a></li>
-            </ul>
-          </div>
-          <div class="d-lg-flex align-items-center d-none">
-            <div class="pe-3">
-              <img
-                class="curser_pointer"
-                src="./assets/images/webp/twitter.png"
-                alt="twitter"
-              />
-            </div>
-            <div class="pe-3">
-              <img
-                class="curser_pointer"
-                src="./assets/images/webp/discord.png"
-                alt="discord"
-              />
-            </div>
-            <div>
-              <img
-                class="curser_pointer"
-                src="./assets/images/webp/instagram.png"
-                alt="instagram"
-              />
-            </div>
-          </div>
-          <div class="nav-icon d-lg-none" id="shownav" onclick="shownav()">
-            <div class="nav_icon" onclick="iconchange()">
-              <div class="bar1"></div>
-              <div class="bar2"></div>
-              <div class="bar3"></div>
-            </div>
-          </div>
-        </nav>
-
-        <main class="d-flex flex-column justify-content-center align-items-center mt-5 pt-4">
+    <nav class="d-flex justify-content-between align-items-center">
+      
+      <a class="d-flex align-items-center z_999" href="#"><img src="./assets/images/webp/navlogo.png" alt="">
+      <p class="ff_chewy color_orange textshadow_orange fs_lg mb-0 ps-3">Cozy <span class="textshadow_lightgreen color_green">Capys</span></p></a>
+      <ul class="d-flex align-items-center mb-0 ps-0 nav_lg"id="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Impact</a></li>
+        <li><a href="#">Roadmap</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li class="d-lg-none d-block"><a href="#"><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/twitter.png" alt="twitter"></a></li>
+        <li class="d-lg-none d-block"><a href="#"><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/discord.png" alt="discord"></a></li>
+        <li class="d-lg-none d-block"><a href="#"><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/instagram.png" alt="instagram"></a></li>
+      </ul>
+      <div class="d-lg-flex align-items-center gap-3 d-none ">
+        <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/twitter.png" alt="twitter"></div>
+        <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/discord.png" alt="discord"></div>
+        <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/instagram.png" alt="instagram"></div>
+      </div>
+      <div class=" d-flex flex-column d-lg-none z_999 "onclick="shownav()">
+        <span class="icon"></span>
+        <span class="icon"></span>
+        <span class="icon"></span>
+      </div>
+    </nav>
+        <main class="d-flex flex-column justify-content-center align-items-center mt-5 pt-4"data-aos="fade-down" data-aos-duration="3000">
           <h1 class="text-center ff_chary fs_xl color_orange textshadow_black word_spacing">
             Cozy <span class="ff_soda color_green"> Capys </span> <span class="color_white">NFT </span>
           </h1>
@@ -82,10 +71,10 @@
               capybara characters! 10% of all proceeds will go to wildlife
               conservation organizations!
             </p>
-            <button class="ff_balsmiq fw-bold fs_md header_button mt-4">Join Us</button>
+            <button class="ff_balsmiq fw-bold fs_md header_button mt-4 transition_300ms">Join Us</button>
           </div>
           </div>
-          <div class="w-100 position-relative z-3"><img class="w-100 position-relative z-2" src="./assets/images/webp/hippogroup.png" alt="hippogroup">
+          <div class="w-100 position-relative z-3"data-aos="fade-up" data-aos-duration="1500"><img class="w-100 position-relative z-2" src="./assets/images/webp/hippogroup.png" alt="hippogroup">
             <div class="hero_grass w-100 z-0"><img class="w-100" src="./assets/images/webp/hero_green_img.webp" alt=""></div>
           </div>
          
@@ -93,7 +82,7 @@
       
     </header>
     <!-- -----------------------------ABOUT us----------------------------------- -->
-    <section class="bg_pink py-5 position-relative">
+    <section class="bg_pink py-5 position-relative"  >
       <div class="about_hippo w-100 z-1 d-lg-block d-none">
         <img
           class="w-100 h-100"
@@ -101,18 +90,18 @@
           alt="hippo"
         />
       </div>
-      <div class="about_tree z-2 d-none d-lg-block">
-        <img src="./assets/images/webp/aboutus_tree.png" alt="about_tree" />
+      <div class="about_tree z-2 d-none d-lg-block ">
+        <img class="w-100 h-100" src="./assets/images/webp/aboutus_tree.png" alt="about_tree" />
       </div>
       <div class="container py-5">
-        <div class="bg_cloud py-5 px-xl-0 px-5">
+        <div class="bg_cloud py-5 px-xl-0 pt_100 px-5"data-aos="zoom-in" data-aos-duration="1500">
           <h2
-            class="text-center ff_chary fw-normal fs_xlg color_pink textshadow_pink mt-100"
+            class="text-center ff_chary fw-normal fs_xlg color_pink textshadow_pink mt-100 "
           >
             About Us
           </h2>
           <p
-            class="text-center mx-auto ff_balsmiq fs_sm lh_27px mb-0 pt-3 mw_707px"
+            class="text-center mx-auto ff_balsmiq fs_sm lh_27px mb-0 pt-3 mw_707px "
           >
             Cozy Capys is an impactful NFT project featuring 10,000 adorable
             capybara characters! Capybaras are sweet, caring, and gentle
@@ -132,7 +121,7 @@
       <img class="w-100" src="./assets/images/webp/aboutus_layer.png" alt="" />
     </div>
     <!-- ---------------------------------Impact------------------------------------------ -->
-    <section class="bg_sky position-relative py-5 overflow-hidden">
+    <section class="bg_sky position-relative pt-5 pb-5 pb-lg-0 overflow-hidden">
       <div class="impact_vector w-100">
         <img
           class="w-100"
@@ -149,11 +138,13 @@
       </div>
       <div class="container py-lg-5 my-lg-5">
         <div
-          class="row align-items-center justify-content-between position-relative z-2"
+          class="row align-items-center justify-content-between position-relative z-2" data-aos="fade-right"data-aos-duration="6000"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine""
         >
           <div class="col-lg-6">
             <h2 class="ff_chary color_white textshadow_blue fs_xlg">Impact</h2>
-            <p class="ff_balsmiq color_black op_70 fs_sm pb-5">
+            <p class="ff_balsmiq color_black op_70 fs_sm pb-5 pt-3">
               Cozy Capys, an NFT project centered around adorable capybara
               characters, aims to create a positive social impact. It achieves
               this through initiatives such as donating 10% of proceeds to
@@ -169,7 +160,9 @@
           <div class="col-lg-5">
             <div>
               <img
-                class="gif w-100 hw_lg gif_shadow"
+                class="gif w-100 hw_lg gif_shadow" data-aos="fade-left"data-aos-duration="6000"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
                 src="./assets/images/gif/roadmapgif.gif"
                 alt="gif"
               />
@@ -184,6 +177,7 @@
 
     <!-- -----------------------------ROADMAP----------------------------------------- -->
     <section class="py-5 bg_lightgreen position-relative">
+      <div class="roadtree d-lg-block d-none"><img src="./assets/images/webp/roadmap_tree.png" alt="tree"></div>
       <div class="impact_layer">
         <img
           class="w-100"
@@ -204,7 +198,7 @@
         <div class="row pt-4" id="allcards">
           <div class="col-lg-7 pb-1">
             <div
-              class="d-flex justify-content-between bg_card transition_400ms"
+              class="d-flex justify-content-between bg_card transition_300ms"
               onclick="card1()"
             >
               <div class="d-flex flex-column justify-content-between">
@@ -216,9 +210,9 @@
                   <div class="d-flex align-items-center">
                     <p class="text-white mb-0 ff_balsmiq fs_18">Preparation</p>
                     <img
-                      class="ps-2"
-                      src="./assets/images/png/Arrow 1.png"
-                      alt=""
+                      class="ps-2 z-3"
+                      src="./assets/images/webp/Arrow 1.png"
+                      alt="arrow"
                     />
                   </div>
                 </div>
@@ -244,7 +238,7 @@
           </div>
           <div class="col-lg-5 pb-1 pt-3 pt-lg-0">
             <div
-              class="d-flex justify-content-between bg_card transition_400ms"
+              class="d-flex justify-content-between bg_card transition_300ms"
               onclick="card2()"
             >
               <div class="d-flex flex-column justify-content-between">
@@ -257,8 +251,8 @@
                     <p class="text-white mb-0 ff_balsmiq fs_18">Preparation</p>
                     <img
                       class="ps-2"
-                      src="./assets/images/png/Arrow 1.png"
-                      alt=""
+                      src="./assets/images/webp/Arrow 1.png"
+                      alt="arrow2"
                     />
                   </div>
                 </div>
@@ -284,7 +278,7 @@
           </div>
           <div class="col-lg-5 pt-3">
             <div
-              class="d-flex justify-content-between bg_card transition_400ms"
+              class="d-flex justify-content-between bg_card transition_300ms"
               onclick="card3()"
             >
               <div class="d-flex flex-column justify-content-between">
@@ -297,8 +291,8 @@
                     <p class="text-white mb-0 ff_balsmiq fs_18">Preparation</p>
                     <img
                       class="ps-2"
-                      src="./assets/images/png/Arrow 1.png"
-                      alt=""
+                      src="./assets/images/webp/Arrow 1.png"
+                      alt="arrow3"
                     />
                   </div>
                 </div>
@@ -324,7 +318,7 @@
           </div>
           <div class="col-lg-7 pt-3">
             <div
-              class="d-flex justify-content-between bg_card transition_400ms"
+              class="d-flex justify-content-between bg_card transition_300ms"
               onclick="card4()"
             >
               <div class="d-flex flex-column justify-content-between">
@@ -337,8 +331,8 @@
                     <p class="text-white mb-0 ff_balsmiq fs_18">Preparation</p>
                     <img
                       class="ps-2"
-                      src="./assets/images/png/Arrow 1.png"
-                      alt=""
+                      src="./assets/images/webp/Arrow 1.png"
+                      alt="arrow4"
                     />
                   </div>
                 </div>
@@ -578,21 +572,81 @@
       </div>
     </section>
     <!-- ---------------------------------FAQS----------------------------------------------->
-    <section class="bg_cream position-relative py-5">
+    <section class="bg_cream position-relative pt-5 pb_100">
       <div class="roadmap_layer w-100"><img class="w-100" src="./assets/images/webp/roadmap_bottom.png" alt="roadmap_bottom"></div>
+      <div class="faqtree d-xl-block d-none"><img src="./assets/images/webp/faqs tree.png" alt="faqtree"></div>
 <div class="container">
-<h2 class="text-center ff_chary fs_xlg color_white textshadow_orange {
-  text-shadow: 1px 1px rgba(255, 212, 154, 1) !important;
-}">FAQ’s</h2>
-</div>
-    </section>
+<h2 class="text-center ff_chary fs_xlg color_white textshadow_orange2 mt-5 pt-5 mb-5
+">
+FAQ’s</h2>
 
+
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4"data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q1. What is Cozy Capys?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4 mt-3"data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q2. How does Cozy Capys give back to wildlife conservation?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4 mt-3"data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q3. What kind of community events does Cozy Capys host?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4 mt-3"data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q4. How can I stay updated on Cozy Capys news and announcements?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4 mt-3"data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q5. How can I adopt my Cozy Capy?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+<div class="bg-white d-flex align-items-center justify-content-between rounded-2 px-4 mt-3 "data-aos="fade-up"
+     data-aos-duration="1500">
+  <div><p class="ff_balsmiq fw-bold fs_xmd py-4 mb-0">Q6. What utility does owning a Cozy Capy provide?</p></div>
+  <div><img class="curser_pointer transition_300ms" src="./assets/images/webp/arrow_faq.png" alt="arrow"></div>
+</div>
+</div>
+ </section>
+<footer class="bg_footerlayer pt_100 pb-4 bg_cream  position-relative">
+  <div class="footer_left"><img class="wh_xl d-none d-sm-block" src="./assets/images/webp/footer_left.png" alt="footer_left"></div>
+  <div class="footer_right"><img class="wh_xl d-none d-sm-block" src="./assets/images/webp/footer_right.png" alt="footer_right"></div>
+<div class="d-flex align-items-center justify-content-center pt-5  pb_100 ">
+  <img src="./assets/images/webp/footerlogo.png" alt="footerlogo">
+  <p class="ff_chewy mb-0 fs_mlg color_orange textshadow_orange mb-0 ps-3">Cozy<span class="color_white textshadow_lightgreen ps-2">Cozy</span></p>
+</div>
+<div class="d-flex justify-content-center align-items-center bg_footer ">
+ <ul class="d-flex align-items-center justify-content-center  ps-0 overflow-x-scroll">
+<li class="px-3"><a class="ff_balsmiq color_black fs_xsm" href="#">Home</a></li>
+<li class="px-3"><a class="ff_balsmiq color_black fs_xsm" href="#">About</a></li>
+<li class="px-3"><a class="ff_balsmiq color_black fs_xsm" href="#">Impact</a></li>
+<li class="px-3"><a class="ff_balsmiq color_black fs_xsm" href="#">Roadmap</a></li>
+<li class="px-3"><a class="ff_balsmiq color_black fs_xsm" href="#">FAQ</a></li>
+</ul>
+</div>
+
+<div class="d-flex align-items-center justify-content-center gap-4 ">
+  <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/ftwiitter.png" alt="twitter"></div>
+  <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/fdiscord.png" alt="discord"></div>
+  <div><img class="curser_pointer transition_300ms scalehover" src="./assets/images/webp/finstagram.png" alt="instagram"></div>
+</div>
+<div class="footer_line mt-5"></div>
+<p class="text-center color_black ff_balsmiq fs_xxsm pt-4 mb-0 ">Copyright ©2022 All rights reserved Plump Kittens</p>
+
+   </footer>
+</div>
     
     <script>
-      function shownav() {
-        document.getElementById("navBar").classList.toggle("shownav");
-        document.body.classList.toggle("overflow");
-      }
+    const a = document.getElementById("nav")
+    function shownav(){
+      a.classList.toggle("shownav")
+      document.body.classList.toggle("overflow_hidden")
+    }
     </script>
     <script>
       function card1() {
@@ -628,10 +682,21 @@
         document.getElementById("allcards").style.display = "flex";
       }
     </script>
+    <script> 
+     const preloader = document.getElementById("preloader");
+      setTimeout(() => {
+        preloader.classList.add("d-none");
+        preloader.classList.add("pointer_event_none");
+        document.body.classList.remove("overflow-hidden");
+      }, 1000);</script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+  AOS.init();
+</script>
   </body>
 </html>

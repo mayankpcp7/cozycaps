@@ -16,6 +16,7 @@
 :root {
   --fs-xl: 80px;
   --fs-xlg: 60px;
+  --fs-mlg: 43.22px;
   --fs-lg: 31.06px;
   --fs-xmd: 22px;
   --fs-md: 20px;
@@ -31,6 +32,9 @@
 .fs_lg {
   font-size: var(--fs-lg);
 }
+.fs_mlg {
+  font-size: var(--fs-mlg);
+}
 .fs_xmd {
   font-size: var(--fs-xmd);
 }
@@ -43,13 +47,17 @@
 .fs_xsm {
   font-size: var(--fs-xsm);
 }
-@media(max-width:768px){
-  :root{
-      --fs-xl: 50px;
+.fs_xxsm {
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  :root {
+    --fs-xl: 50px;
+      --fs-xmd: 17px;
   }
 }
-@media(max-width:478px){
-  :root{
-      --fs-xl: 40px;
+@media (max-width: 478px) {
+  :root {
+    --fs-xl: 40px;
   }
 }
